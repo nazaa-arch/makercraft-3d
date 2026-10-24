@@ -112,7 +112,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
               className={`py-1.5 px-2.5 rounded-xl border transition-all capitalize text-[11px] ${
                 settings.theme === theme
                   ? 'bg-purple-600 border-purple-600 text-white shadow-xs'
-                  : 'bg-slate-950/60 border-slate-200 text-slate-600 hover:text-white'
+                  : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'
               }`}
             >
               {theme.replace('-', ' ')}
@@ -123,7 +123,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
       {/* Toggles */}
       <div className="grid grid-cols-2 gap-2 pt-2 border-t border-slate-200 text-xs">
-        <label className="flex items-center gap-2 p-2 rounded-xl bg-slate-950/60 border border-slate-200 cursor-pointer">
+        <label className="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer">
           <input
             type="checkbox"
             checked={settings.wireframe}
@@ -133,7 +133,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
           <span className="text-slate-700 text-[11px]">Wireframe</span>
         </label>
 
-        <label className="flex items-center gap-2 p-2 rounded-xl bg-slate-950/60 border border-slate-200 cursor-pointer">
+        <label className="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer">
           <input
             type="checkbox"
             checked={settings.autoRotate}
@@ -145,7 +145,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
       </div>
 
       {/* Geometric Topology Stats */}
-      <div className="p-3 rounded-xl bg-slate-950/90 border border-slate-200 space-y-1.5 text-xs">
+      <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5 text-xs">
         <div className="flex items-center justify-between text-slate-600 text-[11px] font-mono">
           <span className="flex items-center gap-1 text-slate-800">
             <Cpu className="w-3.5 h-3.5 text-purple-400" />
