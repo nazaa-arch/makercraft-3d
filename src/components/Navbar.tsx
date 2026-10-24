@@ -14,7 +14,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onExportOBJ
 }) => {
   return (
-    <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-40">
+    <header className="border-b border-slate-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-40 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         
         {/* Brand */}
@@ -24,25 +24,25 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-extrabold text-base tracking-tight text-white font-mono">MakerCraft<span className="text-purple-400">.3D</span></span>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/30">
+              <span className="font-extrabold text-base tracking-tight text-slate-900 font-mono">MakerCraft<span className="text-purple-600">.3D</span></span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 font-semibold">
                 v1.0.0
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 hidden sm:block">
+            <p className="text-[11px] text-slate-500 hidden sm:block">
               Generative Mathematical Art &amp; 3D Parametric Studio
             </p>
           </div>
         </div>
 
         {/* Geometry Selector Pills */}
-        <div className="hidden md:flex items-center gap-1.5 p-1 bg-slate-950/80 rounded-xl border border-slate-800 text-xs">
+        <div className="hidden md:flex items-center gap-1.5 p-1 bg-slate-100/90 rounded-xl border border-slate-200 text-xs">
           <button
             onClick={() => onSelectGeometry('torus-knot')}
             className={`px-3 py-1.5 rounded-lg font-medium transition-all ${
               currentGeometry === 'torus-knot'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-400 hover:text-white'
+                ? 'bg-white text-purple-700 font-semibold shadow-xs border border-slate-200/60'
+                : 'text-slate-500 hover:text-white'
             }`}
           >
             Torus Knot
@@ -52,8 +52,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectGeometry('mobius')}
             className={`px-3 py-1.5 rounded-lg font-medium transition-all ${
               currentGeometry === 'mobius'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-400 hover:text-white'
+                ? 'bg-white text-purple-700 font-semibold shadow-xs border border-slate-200/60'
+                : 'text-slate-500 hover:text-white'
             }`}
           >
             Möbius Strip
@@ -63,8 +63,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectGeometry('superformula')}
             className={`px-3 py-1.5 rounded-lg font-medium transition-all ${
               currentGeometry === 'superformula'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-400 hover:text-white'
+                ? 'bg-white text-purple-700 font-semibold shadow-xs border border-slate-200/60'
+                : 'text-slate-500 hover:text-white'
             }`}
           >
             Superformula 3D
@@ -74,8 +74,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectGeometry('klein')}
             className={`px-3 py-1.5 rounded-lg font-medium transition-all ${
               currentGeometry === 'klein'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-400 hover:text-white'
+                ? 'bg-white text-purple-700 font-semibold shadow-xs border border-slate-200/60'
+                : 'text-slate-500 hover:text-white'
             }`}
           >
             Klein Bottle
@@ -85,8 +85,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectGeometry('spherical-harmonic')}
             className={`px-3 py-1.5 rounded-lg font-medium transition-all ${
               currentGeometry === 'spherical-harmonic'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-400 hover:text-white'
+                ? 'bg-white text-purple-700 font-semibold shadow-xs border border-slate-200/60'
+                : 'text-slate-500 hover:text-white'
             }`}
           >
             Harmonik Bola
@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href="https://sim.steamcraft.online"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white transition-all text-[11px]"
+              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-900 shadow-xs transition-all text-[11px]"
               title="SteamSim Lab"
             >
               <Orbit className="w-3 h-3 text-cyan-400" />
@@ -111,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href="https://scholar.steamcraft.online"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white transition-all text-[11px]"
+              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-900 shadow-xs transition-all text-[11px]"
               title="PaperCraft AI"
             >
               <FileText className="w-3 h-3 text-indigo-400" />
@@ -122,7 +122,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href="https://verilab.steamcraft.online"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white transition-all text-[11px]"
+              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-900 shadow-xs transition-all text-[11px]"
               title="VeriLab AI"
             >
               <Microscope className="w-3 h-3 text-emerald-400" />
@@ -133,10 +133,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               href="https://portofolionaza.steamcraft.online"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white transition-all text-[11px]"
+              className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-900 shadow-xs transition-all text-[11px]"
               title="Portofolio Naza"
             >
-              <ShieldCheck className="w-3 h-3 text-purple-400" />
+              <ShieldCheck className="w-3 h-3 text-purple-600" />
               <span>portofolionaza</span>
               <ExternalLink className="w-2.5 h-2.5 opacity-60" />
             </a>

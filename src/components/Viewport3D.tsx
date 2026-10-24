@@ -37,11 +37,11 @@ export const Viewport3D: React.FC<Viewport3DProps> = ({ settings, onMeshUpdated 
     rendererRef.current = renderer;
 
     // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.1);
     scene.add(ambientLight);
 
     const dirLight1 = new THREE.DirectionalLight(0xa855f7, 2.0);
-    dirLight1.position.set(10, 20, 15);
+    dirLight1.position.set(10, 20, 15); dirLight1.intensity = 2.4;
     scene.add(dirLight1);
 
     const dirLight2 = new THREE.DirectionalLight(0x06b6d4, 1.8);

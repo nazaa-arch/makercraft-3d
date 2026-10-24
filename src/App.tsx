@@ -41,7 +41,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 selection:bg-purple-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#f3f6fb] text-[#111d2d] selection:bg-purple-600 selection:text-white">
       {/* Top Navbar */}
       <Navbar
         currentGeometry={settings.geometry}
@@ -50,20 +50,20 @@ export function App() {
       />
 
       {/* Subheader Status */}
-      <div className="border-b border-slate-900 bg-slate-900/30 py-3 px-4 sm:px-6 lg:px-8">
+      <div className="border-b border-slate-200/80 bg-white/70 backdrop-blur py-3 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-            <span className="text-slate-300">
-              Bagian dari <strong>SteamCraft Ecosystem</strong> (<a href="https://steamcraft.online" target="_blank" rel="noreferrer" className="text-cyan-400 hover:underline">steamcraft.online</a>)
+            <span className="text-slate-700">
+              Bagian dari <strong>SteamCraft Ecosystem</strong> (<a href="https://steamcraft.online" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">steamcraft.online</a>)
             </span>
-            <span className="text-slate-600">&bull;</span>
-            <span className="text-slate-400">Target Subdomain: <code className="text-purple-300 font-mono">maker.steamcraft.online</code></span>
+            <span className="text-slate-300">&bull;</span>
+            <span className="text-slate-300">Target Subdomain: <code className="text-purple-700 font-mono bg-purple-50 px-2 py-0.5 rounded border border-purple-200">maker.steamcraft.online</code></span>
           </div>
 
-          <div className="flex items-center gap-2 text-slate-400">
+          <div className="flex items-center gap-2 text-slate-300">
             <Box className="w-3.5 h-3.5 text-purple-400" />
-            <span>Lead Developer: <strong className="text-slate-200">Muhammad Naza Firmansyah</strong></span>
+            <span>Lead Developer: <strong className="text-slate-900 font-semibold">Muhammad Naza Firmansyah</strong></span>
           </div>
         </div>
       </div>
@@ -73,8 +73,8 @@ export function App() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-185px)] min-h-[640px]">
           
           {/* 3D Viewport (8 Cols) */}
-          <div className="lg:col-span-8 bg-slate-900/60 rounded-2xl border border-slate-800 relative overflow-hidden shadow-2xl flex flex-col">
-            <div className="absolute top-4 left-4 z-10 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-800 text-xs font-mono text-purple-300 flex items-center gap-2">
+          <div className="lg:col-span-8 bg-white rounded-2xl border border-slate-200/80 relative overflow-hidden shadow-sm flex flex-col">
+            <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-200 text-xs font-mono text-purple-800 shadow-xs flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400" />
               <span>Interactive 3D Viewport (Klik &amp; Drag untuk Rotasi, Scroll untuk Zoom)</span>
             </div>
@@ -105,17 +105,17 @@ export function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 bg-slate-950 py-5 px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
+      <footer className="border-t border-slate-200 bg-white py-5 px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-purple-400" />
             <span>MakerCraft 3D &bull; Created &amp; Developed by <strong>Muhammad Naza Firmansyah</strong> &bull; &copy; 2026</span>
           </div>
-          <div className="flex items-center gap-4 text-slate-400">
-            <a href="https://steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors">SteamCraft</a>
-            <a href="https://sim.steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors">SteamSim Lab</a>
-            <a href="https://scholar.steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-indigo-400 transition-colors">PaperCraft AI</a>
-            <a href="https://portofolionaza.steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors">Portofolio Naza</a>
+          <div className="flex items-center gap-4 text-slate-300">
+            <a href="https://steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">SteamCraft</a>
+            <a href="https://sim.steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">SteamSim Lab</a>
+            <a href="https://scholar.steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">PaperCraft AI</a>
+            <a href="https://portofolionaza.steamcraft.online" target="_blank" rel="noreferrer" className="hover:text-purple-600 transition-colors">Portofolio Naza</a>
           </div>
         </div>
       </footer>
