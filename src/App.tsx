@@ -74,7 +74,7 @@ export function App() {
           
           {/* 3D Viewport (8 Cols) */}
           <div className="lg:col-span-8 bg-white rounded-2xl border border-slate-200/80 relative overflow-hidden shadow-sm flex flex-col">
-            <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-200 text-xs font-mono text-purple-800 shadow-xs flex items-center gap-2">
+            <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-200 text-xs font-mono text-purple-900 font-semibold shadow-xs flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400" />
               <span>Interactive 3D Viewport (Klik &amp; Drag untuk Rotasi, Scroll untuk Zoom)</span>
             </div>

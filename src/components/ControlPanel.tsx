@@ -26,7 +26,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
             Parameter Matematika 3D
           </h4>
         </div>
-        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-950/60 text-purple-300 border border-purple-500/30">
+        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-100 text-purple-800 border border-purple-300 font-semibold">
           GPU Shading Active
         </span>
       </div>
@@ -35,8 +35,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
       <div className="space-y-3.5 text-xs">
         <div>
           <div className="flex justify-between mb-1">
-            <span className="text-slate-600">Parameter Frekuensi (p)</span>
-            <span className="font-mono text-purple-400 font-bold">{settings.p}</span>
+            <span className="text-slate-700 font-medium">Parameter Frekuensi (p)</span>
+            <span className="font-mono text-purple-800 font-extrabold">{settings.p}</span>
           </div>
           <input
             type="range"
@@ -51,8 +51,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
         <div>
           <div className="flex justify-between mb-1">
-            <span className="text-slate-600">Parameter Belitan (q)</span>
-            <span className="font-mono text-pink-400 font-bold">{settings.q}</span>
+            <span className="text-slate-700 font-medium">Parameter Belitan (q)</span>
+            <span className="font-mono text-pink-800 font-extrabold">{settings.q}</span>
           </div>
           <input
             type="range"
@@ -67,8 +67,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
         <div>
           <div className="flex justify-between mb-1">
-            <span className="text-slate-600">Ketebalan Tabung / Radius</span>
-            <span className="font-mono text-cyan-400 font-bold">{settings.tubeRadius.toFixed(2)}</span>
+            <span className="text-slate-700 font-medium">Ketebalan Tabung / Radius</span>
+            <span className="font-mono text-cyan-800 font-extrabold">{settings.tubeRadius.toFixed(2)}</span>
           </div>
           <input
             type="range"
@@ -83,8 +83,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
         <div>
           <div className="flex justify-between mb-1">
-            <span className="text-slate-600">Resolusi Mesh (Grid Steps)</span>
-            <span className="font-mono text-emerald-400 font-bold">{settings.resolution}</span>
+            <span className="text-slate-700 font-medium">Resolusi Mesh (Grid Steps)</span>
+            <span className="font-mono text-emerald-800 font-extrabold">{settings.resolution}</span>
           </div>
           <input
             type="range"
@@ -146,12 +146,12 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
       {/* Geometric Topology Stats */}
       <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5 text-xs">
-        <div className="flex items-center justify-between text-slate-600 text-[11px] font-mono">
+        <div className="flex items-center justify-between text-slate-700 font-medium text-[11px] font-mono">
           <span className="flex items-center gap-1 text-slate-800">
             <Cpu className="w-3.5 h-3.5 text-purple-400" />
             Topologi Geometri
           </span>
-          <span className="text-emerald-400 font-bold">Siap 3D Print</span>
+          <span className="text-emerald-800 font-extrabold">Siap 3D Print</span>
         </div>
         <div className="grid grid-cols-2 gap-2 text-[11px] font-mono pt-1 border-t border-slate-200/60">
           <div>
